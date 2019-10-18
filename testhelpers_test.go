@@ -4,10 +4,10 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/RangelReale/osin"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/mpraski/osin"
 )
 
 // createDynamoDB instance
@@ -23,7 +23,6 @@ func createDynamoDB() *dynamodb.DynamoDB {
 }
 
 // Predictable testing token generation
-// from: https://github.com/RangelReale/osin/blob/cca734bceea0eb44cc87f5e36fd6e2648f5e8580/storage_test.go#L129
 type TestingAuthorizeTokenGen struct {
 	counter int64
 }

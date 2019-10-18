@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/RangelReale/osin"
+	"github.com/mpraski/osin"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/RangelReale/osin"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/mpraski/osin"
 	"github.com/stretchr/testify/assert"
 )
 

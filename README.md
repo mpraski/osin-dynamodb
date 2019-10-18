@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/uniplaces/osin-dynamodb/badge.svg?branch=master)](https://coveralls.io/github/uniplaces/osin-dynamodb?branch=master)
 [![Report Card](http://goreportcard.com/badge/uniplaces/osin-dynamodb)](http://goreportcard.com/report/uniplaces/osin-dynamodb)
 
-This package implements the storage for [OSIN](https://github.com/RangelReale/osin) with [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) using [aws-sdk-go](https://github.com/aws/aws-sdk-go).
+This package implements the storage for [OSIN](https://github.com/mpraski/osin) with [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) using [aws-sdk-go](https://github.com/aws/aws-sdk-go).
 
 ## Installation
 
@@ -21,7 +21,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/uniplaces/osin-dynamodb"
-	"github.com/RangelReale/osin"
+	"github.com/mpraski/osin"
 	"os"
 )
 

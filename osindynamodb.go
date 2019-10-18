@@ -5,9 +5,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/RangelReale/osin"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/mpraski/osin"
 )
 
 var (
@@ -31,7 +31,7 @@ func New(db *dynamodb.DynamoDB, config StorageConfig) *Storage {
 	}
 }
 
-// Storage implements the storage interface for OSIN (https://github.com/RangelReale/osin)
+// Storage implements the storage interface for OSIN (https://github.com/mpraski/osin)
 // with Amazon DynamoDB (https://aws.amazon.com/dynamodb/)
 // using aws-sdk-go (https://github.com/aws/aws-sdk-go).
 type Storage struct {
@@ -383,7 +383,6 @@ func (receiver *Storage) RemoveAuthorize(code string) error {
 
 // SaveAccess writes AccessData.
 func (receiver *Storage) SaveAccess(accessData *osin.AccessData) error {
-	// @issue https://github.com/RangelReale/osin/issues/47
 	if accessData.AccessData != nil && accessData.AccessData.AccessData != nil {
 		accessData.AccessData.AccessData = nil
 	}
@@ -492,7 +491,6 @@ func (receiver *Storage) RemoveAccess(token string) error {
 // This method is used internally by SaveAccess(accessData *osin.AccessData)
 // and can be useful for testing
 func (receiver *Storage) SaveRefresh(accessData *osin.AccessData) error {
-	// @issue https://github.com/RangelReale/osin/issues/47
 	if accessData.AccessData != nil && accessData.AccessData.AccessData != nil {
 		accessData.AccessData.AccessData = nil
 	}

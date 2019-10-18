@@ -1,7 +1,7 @@
 package: .
 import:
 - package: github.com/aws/aws-sdk-go
-- package: github.com/RangelReale/osin
+- package: github.com/mpraski/osin
 - package: github.com/stretchr/testify
   subpackages:
   - /assert
